@@ -28,27 +28,27 @@ var backgrounds = {
   morning : {
     label : "morning",
     greetingColor : "#000",
-    image : "images/shangrila.jpg",
-    caption: "香格里拉，中国",
-    captionLink : "http://en.wikipedia.org/wiki/Zhongdian",
+    image : "images/angkor.jpg",
+    caption: "Angkor Wat",
+    captionLink : "http://en.wikipedia.org/wiki/Angkor_Wat",
     captionColor : "#FFF",
     linksColor : "#FFF"
   },
   afternoon : {
     label : "afternoon",
     greetingColor : "#FFF",
-    image : "images/healdsburg.jpg",
-    caption: "Healdsburg, CA",
-    captionLink : "http://en.wikipedia.org/wiki/Healdsburg,_California",
+    image : "images/montana.jpg",
+    caption: "Glacier National Park",
+    captionLink : "http://en.wikipedia.org/wiki/Glacier_National_Park_(U.S.)",
     captionColor : "#FFF",
     linksColor : "#FFF"
   },
   evening : {
     label : "evening",
     greetingColor : "#FFF",
-    image : "images/lijiang.jpg",
-    caption : "丽江, 中国", 
-    captionLink : "http://en.wikipedia.org/wiki/Lijiang,_Yunnan",
+    image : "images/peru.jpg",
+    caption : "Inca Trail", 
+    captionLink : "http://en.wikipedia.org/wiki/Inca_Trail_to_Machu_Picchu",
     captionColor : "#FFF",
     linksColor : "#FFF"
   }
