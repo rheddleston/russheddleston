@@ -24,7 +24,7 @@ function render() {
   $("#links").css("opacity", 1);
 }
 
-var backgrounds = {
+var backgrounds = [
   {
     label : "angkor wat",
     greetingColor : "#000",
@@ -88,7 +88,7 @@ var backgrounds = {
     captionColor : "#FFF",
     linksColor : "#FFF"
   }
-};
+];
 
 function setBackground() {
   var hours = new Date().getHours();
