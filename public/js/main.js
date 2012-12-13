@@ -25,8 +25,8 @@ function render() {
 }
 
 var backgrounds = {
-  morning : {
-    label : "morning",
+  {
+    label : "angkor wat",
     greetingColor : "#000",
     image : "images/angkor.jpg",
     caption: "Angkor Wat",
@@ -34,8 +34,8 @@ var backgrounds = {
     captionColor : "#FFF",
     linksColor : "#FFF"
   },
-  afternoon : {
-    label : "afternoon",
+  {
+    label : "glacier national park",
     greetingColor : "#FFF",
     image : "images/montana.jpg",
     caption: "Glacier National Park",
@@ -43,12 +43,48 @@ var backgrounds = {
     captionColor : "#FFF",
     linksColor : "#FFF"
   },
-  evening : {
-    label : "evening",
+  {
+    label : "the inca trail",
     greetingColor : "#FFF",
     image : "images/peru.jpg",
     caption : "Inca Trail", 
     captionLink : "http://en.wikipedia.org/wiki/Inca_Trail_to_Machu_Picchu",
+    captionColor : "#FFF",
+    linksColor : "#FFF"
+  },
+  {
+    label : "shady waffle",
+    greetingColor : "#FFF",
+    image : "images/bm.jpg",
+    caption : "Shady Waffle", 
+    captionLink : "http://www.shadywaffle.org/",
+    captionColor : "#FFF",
+    linksColor : "#FFF"
+  },
+  {
+    label : "nepal",
+    greetingColor : "#FFF",
+    image : "images/nepal.jpg",
+    caption : "Mardi Himal, Nepal", 
+    captionLink : "http://en.wikipedia.org/wiki/Trekking_peak",
+    captionColor : "#FFF",
+    linksColor : "#FFF"
+  },
+  {
+    label : "market and 10th",
+    greetingColor : "#FFF",
+    image : "images/sf_market_and_10th.jpg",
+    caption : "Market and 10th, SF", 
+    captionLink : "https://maps.google.com/maps?q=market+and+10th,+sf,+ca&hl=en&sll=37.269174,-119.306607&sspn=12.3355,21.928711&hnear=Market+St+%26+10th+St,+San+Francisco,+California&t=m&z=16",
+    captionColor : "#FFF",
+    linksColor : "#FFF"
+  },
+  {
+    label : "san francisco, from mt davidson",
+    greetingColor : "#FFF",
+    image : "images/sf.jpg",
+    caption : "Mt Davidson, SF", 
+    captionLink : "http://en.wikipedia.org/wiki/Mount_Davidson_(California)",
     captionColor : "#FFF",
     linksColor : "#FFF"
   }
@@ -57,18 +93,9 @@ var backgrounds = {
 function setBackground() {
   var hours = new Date().getHours();
   var time;
-  var greeting = "so lovely of you to come by this ";
-  if(hours > 17 || hours < 5) {
-    time = "evening";
-  }
-  else if(hours > 4 && hours < 12) {
-    time = "morning";
-  }
-  else {
-    time = "afternoon";
-  }
-  // time = "afternoon";
-  var backgroundInfo = backgrounds[time];
+  var greeting = "welcome to a little view of ";
+  var backgroundInfo = backgrounds[Random.rand(backgrouns.length()];
+
   greeting += backgroundInfo.label;
   $("div#greeting").css("color", backgroundInfo.greetingColor);
   $("#greeting span").attr("title", greeting);             
