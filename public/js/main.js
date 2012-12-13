@@ -46,7 +46,7 @@ var backgrounds = {
   evening : {
     label : "evening",
     greetingColor : "#FFF",
-    image : "images/napa.jpg",
+    image : "images/peru.jpg",
     caption : "Inca Trail", 
     captionLink : "http://en.wikipedia.org/wiki/Inca_Trail_to_Machu_Picchu",
     captionColor : "#FFF",
