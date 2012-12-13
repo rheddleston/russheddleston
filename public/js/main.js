@@ -94,7 +94,7 @@ function setBackground() {
   var hours = new Date().getHours();
   var time;
   var greeting = "welcome to a little view of ";
-  var backgroundInfo = backgrounds[random(backgrouns.length())];
+  var backgroundInfo = backgrounds[random(backgrounds.length())];
 
   greeting += backgroundInfo.label;
   $("div#greeting").css("color", backgroundInfo.greetingColor);
