@@ -80,7 +80,7 @@ var backgrounds = [
     linksColor : "#FFF"
   },
   {
-    label : "san francisco, from mt davidson",
+    label : "san francisco",
     greetingColor : "#FFF",
     image : "images/sf.jpg",
     caption : "Mt Davidson, SF", 
