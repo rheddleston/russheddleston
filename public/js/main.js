@@ -91,8 +91,6 @@ var backgrounds = [
 ];
 
 function setBackground() {
-  var hours = new Date().getHours();
-  var time;
   var greeting = "welcome to a little view of ";
   var backgroundInfo = backgrounds[Math.floor(Math.random()*backgrounds.length)];
 
