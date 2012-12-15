@@ -20,7 +20,7 @@ function render() {
     return;
   }
   $("#greeting").css("opacity", 1);
-  $("#bgCaption").css("opacity", 1);
+  $("h2").css("opacity", 1);
   $("#links").css("opacity", 1);
 }
 
@@ -29,7 +29,7 @@ var backgrounds = [
     label : "angkor wat",
     greetingColor : "#000",
     image : "images/angkor.jpg",
-    caption: "Angkor Wat",
+    caption: "angkor wat",
     captionLink : "http://en.wikipedia.org/wiki/Angkor_Wat",
     captionColor : "#FFF",
     linksColor : "#FFF"
@@ -38,7 +38,7 @@ var backgrounds = [
     label : "glacier national park",
     greetingColor : "#FFF",
     image : "images/montana.jpg",
-    caption: "Glacier National Park",
+    caption: "glacier national park",
     captionLink : "http://en.wikipedia.org/wiki/Glacier_National_Park_(U.S.)",
     captionColor : "#FFF",
     linksColor : "#FFF"
@@ -47,7 +47,7 @@ var backgrounds = [
     label : "the inca trail",
     greetingColor : "#FFF",
     image : "images/peru.jpg",
-    caption : "Inca Trail", 
+    caption : "inca trail", 
     captionLink : "http://en.wikipedia.org/wiki/Inca_Trail_to_Machu_Picchu",
     captionColor : "#FFF",
     linksColor : "#FFF"
@@ -56,7 +56,7 @@ var backgrounds = [
     label : "shady waffle",
     greetingColor : "#FFF",
     image : "images/bm.jpg",
-    caption : "Shady Waffle", 
+    caption : "shady waffle", 
     captionLink : "http://www.shadywaffle.org/",
     captionColor : "#FFF",
     linksColor : "#FFF"
@@ -65,7 +65,7 @@ var backgrounds = [
     label : "nepal",
     greetingColor : "#FFF",
     image : "images/nepal.jpg",
-    caption : "Mardi Himal, Nepal", 
+    caption : "mardi himal", 
     captionLink : "http://en.wikipedia.org/wiki/Trekking_peak",
     captionColor : "#FFF",
     linksColor : "#FFF"
@@ -74,7 +74,7 @@ var backgrounds = [
     label : "market and 10th",
     greetingColor : "#FFF",
     image : "images/sf_market_and_10th.jpg",
-    caption : "Market and 10th, SF", 
+    caption : "market & 10th", 
     captionLink : "https://maps.google.com/maps?q=market+and+10th,+sf,+ca&hl=en&sll=37.269174,-119.306607&sspn=12.3355,21.928711&hnear=Market+St+%26+10th+St,+San+Francisco,+California&t=m&z=16",
     captionColor : "#FFF",
     linksColor : "#FFF"
@@ -83,7 +83,7 @@ var backgrounds = [
     label : "san francisco",
     greetingColor : "#FFF",
     image : "images/sf.jpg",
-    caption : "Mt Davidson, SF", 
+    caption : "mt davidson", 
     captionLink : "http://en.wikipedia.org/wiki/Mount_Davidson_(California)",
     captionColor : "#FFF",
     linksColor : "#FFF"
@@ -93,13 +93,11 @@ var backgrounds = [
 function setBackground() {
   var greeting = "welcome to a little view of ";
   var backgroundInfo = backgrounds[Math.floor(Math.random()*backgrounds.length)];
-
   greeting += backgroundInfo.label;
   $("div#greeting").css("color", backgroundInfo.greetingColor);
   $("#greeting span").attr("title", greeting);             
   $("#greeting span").css("borderBottom", "1px solid " + backgroundInfo.greetingColor);
-  $("#bgCaption").css("color", backgroundInfo.captionColor)
-  var link = $("#bgCaption a");
+  var link = $("#bgCap a");
   link.attr("href", backgroundInfo.captionLink);
   link.html(backgroundInfo.caption);        
   link.css("color", backgroundInfo.captionColor);
