@@ -2,7 +2,7 @@ var fontsLoaded = false;
 var bgLoaded = false;     
 
 WebFontConfig = {
-  google: { families: [ 'Quicksand:n4' ] },
+  google: { families: [ 'Text Me One:n4' ] },
   // font successfully loaded
   fontactive: function(fontFamily, fontDescription) {
     fontsLoaded = true;
@@ -45,7 +45,7 @@ var backgrounds = [
   },
   {
     label : "the inca trail",
-    greetingColor : "#FFF",
+    greetingColor : "#000",
     image : "images/peru.jpg",
     caption : "inca trail", 
     captionLink : "http://en.wikipedia.org/wiki/Inca_Trail_to_Machu_Picchu",
@@ -63,7 +63,7 @@ var backgrounds = [
   },
   {
     label : "nepal",
-    greetingColor : "#FFF",
+    greetingColor : "#000",
     image : "images/nepal.jpg",
     caption : "mardi himal", 
     captionLink : "http://en.wikipedia.org/wiki/Trekking_peak",
@@ -72,7 +72,7 @@ var backgrounds = [
   },
   {
     label : "market and 10th",
-    greetingColor : "#FFF",
+    greetingColor : "#000",
     image : "images/sf_market_and_10th.jpg",
     caption : "market & 10th", 
     captionLink : "https://maps.google.com/maps?q=market+and+10th,+sf,+ca&hl=en&sll=37.269174,-119.306607&sspn=12.3355,21.928711&hnear=Market+St+%26+10th+St,+San+Francisco,+California&t=m&z=16",
