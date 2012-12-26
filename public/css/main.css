@@ -69,8 +69,8 @@ h2 {
   transition: opacity 200ms ease-in-out;
   -webkit-transition: opacity 200ms ease-in-out;      
   position: absolute;
-  bottom: 5px;
-  right: 5px;
+  bottom: 15px;
+  right: 15px;
   font-size: 9px;
   color: white;
   letter-spacing: 1px;  
@@ -99,8 +99,8 @@ div#links {
   -webkit-transition: opacity 200ms ease-in-out;
   position: absolute;
   text-align: center;
-  bottom: 5px;
-  padding-top: 20px;
+  bottom: 15px;
+  padding-top: 10px;
   font-size: 12px;
   width: 100%;
   height: 70px;
@@ -124,7 +124,7 @@ div#links a {
 div.findme {
   text-align: left;
   margin: 0px auto;
-  width: 100px;
+  width: 120px;
 }
 
 span.spacer {
