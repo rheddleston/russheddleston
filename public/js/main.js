@@ -22,6 +22,9 @@ function render() {
   $("#greeting").css("opacity", 1);
   $("h2").css("opacity", 1);
   $("#links").css("opacity", 1);
+  $("h3").css("opacity", 1);
+  $("h4").css("opacity", 1);
+  $("div.linkContainer").css("opacity", 1);
 }
 
 var backgrounds = [
