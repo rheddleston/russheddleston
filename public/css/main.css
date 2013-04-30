@@ -124,7 +124,7 @@ div#links a {
 div.findme {
   text-align: left;
   margin: 0px auto;
-  width: 80px;
+  width: 110px;
 }
 
 h3 { 
@@ -140,7 +140,8 @@ h3 {
 
 h3 span { 
   color: white; 
-  font: bold 24px;
+  font-size: 24px;
+  font-weight: bold;
   letter-spacing: 2px;  
   background: rgb(0, 0, 0); /* fallback color */
   background: rgba(0, 0, 0, 0.7);
@@ -184,3 +185,70 @@ div.linkContainer p {
   background: rgba(0, 0, 0, 0.7);
   padding: 10px; 
 }​
+
+/* Higher than 960 (desktop devices)
+====================================================================== */
+@media (min-width: 1200px) {
+  
+}
+
+/* Higher than 960 (desktop devices)
+====================================================================== */
+@media only screen and (min-width: 980px) and (max-width: 1199px){
+  
+}
+
+/* Tablet Portrait (devices and browsers)
+====================================================================== */
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  
+}
+
+/* All Mobile Sizes (devices and browser)
+====================================================================== */
+@media only screen and (max-width: 767px) {
+  
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers)
+====================================================================== */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers)
+=================================================================== */
+@media only screen and (max-width: 479px) {
+  h3 { 
+    top: 0px; 
+  }
+
+  h3 span {
+    font-size: 18px; 
+  }
+
+  div#links {
+    font-size: 10px;
+  }
+
+  span.under {
+    font-size: 9px;
+  }
+
+  h2 {
+    bottom: 5px;
+    right: 5px;
+    font-size: 9px;
+  }
+}
+
+/* Makes wide tables viewable on mobile
+=================================================================== */
+
+@media only screen and (max-width: 550px) {
+
+}
+
+@media only screen and (max-width: 800px) {
+  
+}

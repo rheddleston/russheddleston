@@ -25,6 +25,8 @@ function render() {
   $("h3").css("opacity", 1);
   $("h4").css("opacity", 1);
   $("div.linkContainer").css("opacity", 1);
+
+  $("#links").css("bottom", (-1 * $(window).height() + 148));
 }
 
 var backgrounds = [
