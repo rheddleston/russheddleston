@@ -65,8 +65,8 @@ h2 {
   transition: opacity 200ms ease-in-out;
   -webkit-transition: opacity 200ms ease-in-out;      
   position: absolute;
-  bottom: 15px;
-  right: 15px;
+  bottom: 0px;
+  right: 5px;
   font-size: 9px;
   color: white;
   letter-spacing: 1px;  
@@ -93,9 +93,10 @@ div#links {
   opacity: 0;
   transition: opacity 200ms ease-in-out;
   -webkit-transition: opacity 200ms ease-in-out;
-  position: relative;
+  position: absolute;
   text-align: center;
-  bottom: -80%;
+  bottom: 0px;
+  left: 5px;
   font-size: 12px;
   width: 7em;
   background: rgb(0, 0, 0); /* fallback color */
@@ -132,8 +133,9 @@ h3 {
   opacity: 0;
   transition: opacity 200ms ease-in-out;
   -webkit-transition: opacity 200ms ease-in-out;      
-  top: 33%; 
-  width: 100%;
+  top: 0px;
+  left: 5px; 
+  /*width: 100%;*/
   font-size: 24px; 
   text-align: center; 
 }
@@ -218,7 +220,7 @@ div.linkContainer p {
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers)
 =================================================================== */
-@media only screen and (max-width: 479px) {
+@media (max-width: 679px) {
   h3 { 
     top: 0px; 
   }
